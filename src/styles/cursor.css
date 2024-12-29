@@ -1,0 +1,17 @@
+/* Hide default cursor */
+* {
+  cursor: none !important;
+}
+
+/* Interactive elements */
+a, button, input, [role="button"], .interactive {
+  cursor: none !important;
+}
+
+/* Scale effect on hover */
+a:hover ~ div[class*="cursor"],
+button:hover ~ div[class*="cursor"],
+[role="button"]:hover ~ div[class*="cursor"],
+.interactive:hover ~ div[class*="cursor"] {
+  transform: scale(1.2);
+}

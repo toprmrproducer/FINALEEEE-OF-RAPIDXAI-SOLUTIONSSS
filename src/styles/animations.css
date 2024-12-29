@@ -1,0 +1,35 @@
+@keyframes iconBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes iconSway {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(12deg); }
+}
+
+@keyframes iconPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.animate-presence {
+  animation: none;
+}
+
+.animate-presence:hover {
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.animate-presence[data-animation='bounce']:hover {
+  animation-name: iconBounce;
+}
+
+.animate-presence[data-animation='sway']:hover {
+  animation-name: iconSway;
+}
+
+.animate-presence[data-animation='pulse']:hover {
+  animation-name: iconPulse;
+}
